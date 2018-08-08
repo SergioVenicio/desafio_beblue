@@ -1,11 +1,11 @@
-from Fila import fila
+from fila import Fila
 from unittest import TestCase
 
 
 
 class TestFila(TestCase):
     def setUp(self):
-        self.fila = fila.Fila([0, 1, 2, 3, 4, 5])
+        self.fila = Fila([0, 1, 2, 3, 4, 5])
 
     def test_pop(self):
         self.assertEqual(self.fila.pop(), 0)
